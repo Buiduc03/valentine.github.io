@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon"
+        href="kisspng-love-heart-love-heart-romance-clip-art-picture-of-red-heart-5aaeb718420cb8.8640685015213995762706.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's go</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/img14.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/img1.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img2.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img4.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img5.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img6.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img7.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img8.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img9.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img10.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img11.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img12.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img13.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img14.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img15.jpg" onclick="openFullImg(this.src)">
+        <img src="images/img16.jpg" onclick="openFullImg(this.src)">
+        <a id="last" href="flower.html">
+            This for you
+        </a>
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
